@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<string.h>
 #include<windows.h>
-#define NoOfStudents 3
+#define NoOfStudents 2
 typedef struct
 {
     char name [20];
     int roll;
     char address[30];
-    long int number;
+    long long int number;
 } std;
 void sort(std *temp);
 int main ()
@@ -25,7 +25,7 @@ int main ()
         printf("\nEnter your roll number:\t");
         scanf("%d",&bct[i].roll);
         printf("\nEnter your phone number:\t");
-        scanf("%ld",&bct[i].number);
+        scanf("%lld",&bct[i].number);
     }
         fwrite(bct,sizeof(bct),1,f);
     fclose(f);
@@ -39,7 +39,7 @@ int main ()
         printf("%s\n",bct[i].name);
         printf("%s\n",bct[i].address);
         printf("%d\n",bct[i].roll);
-        printf("%ld\n\n",bct[i].number);
+        printf("%lld\n\n",bct[i].number);
 
     }
 
