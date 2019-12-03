@@ -1,3 +1,7 @@
+/*Store and retrieve the name of the students and obtained marks in c programming in
+1st semester using structure.*/
+
+
 #include<stdio.h>
 #include<windows.h>
 struct data
@@ -7,13 +11,15 @@ struct data
 };
 int main()
 {
-    int NoOfStudents=3;
+    int NoOfStudents;
     int i;
+    printf("Enter no of students whose data is to be added:\t");
+    scanf("%d",&NoOfStudents);
     struct data std[NoOfStudents];
     for(i=0;i<NoOfStudents;i++)
     {
         printf("Enter name for student %d:\t",i+1);
-        scanf("%[^\n]s",&std[i].name);
+        scanf(" %[^\n]s",&std[i].name);
         printf("Enter marks for C:\t");
         scanf("%d",&std[i].marks);
     }

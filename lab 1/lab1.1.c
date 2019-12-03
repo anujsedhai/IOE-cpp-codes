@@ -1,3 +1,7 @@
+/*Write a program to find the average expenditure of a company for each month of each
+year, each year and average over the range of years specified. Use arrays to construct a
+table, display the table of expenditure and find the sum and average.*/
+
 #include<stdio.h>
 #include<windows.h>
 int main()
@@ -5,7 +9,6 @@ int main()
     printf("Enter no of years to be added:\t");
     int no_of_years;
     scanf("%d",&no_of_years);
-    no_of_years;
     float finance[no_of_years+1][14];
     int i,j;
     float temp;
@@ -49,6 +52,7 @@ int main()
                 printf("October:\t");
                 break;
             case(10):
+
                 printf("November:\t");
                 break;
             case(11):

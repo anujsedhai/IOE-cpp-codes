@@ -1,7 +1,11 @@
+/*Write a program to read name, rollno, address, and phone number of each student in
+your class using structure. Store the information in file so that you can recover the
+information later. While recovering the information from the file sort the information
+alphabetically according to the name*/
+
 #include<stdio.h>
 #include<string.h>
 #include<windows.h>
-#define NoOfStudents 2
 typedef struct
 {
     char name [20];
@@ -10,8 +14,11 @@ typedef struct
     long long int number;
 } std;
 void sort(std *temp);
+int NoOfStudents;
 int main ()
 {
+    printf("Enter the no of students whose data is to added:\t");
+    scanf("%d",&NoOfStudents);
     std bct[NoOfStudents];
     FILE *f;
     f=fopen("data.txt","w");
@@ -30,7 +37,7 @@ int main ()
         fwrite(bct,sizeof(bct),1,f);
     fclose(f);
     f=fopen("data.txt","r");
-    fread(&bct,sizeof(bct),1,f);
+    fread(bct,sizeof(bct),1,f);
     fclose(f);
     sort(bct);
     system("cls");
