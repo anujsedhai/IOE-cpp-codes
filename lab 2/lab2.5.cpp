@@ -6,10 +6,10 @@ using namespace std;
 float net(int);
 int main()
 {
-    cout<<"Enter your salary:\t"<<endl;
     int s;
+    cout<<"Enter your salary:\t"<<endl;
     cin>>s;
-    cout<<net(s);
+    cout<<"Net payment to the employee = "<<net(s);
 
 }
 inline float net(int a)
