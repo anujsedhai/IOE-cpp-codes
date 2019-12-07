@@ -44,7 +44,7 @@ int main()
         }
         cout<<"Do you want to do another checking?(y/n)";
         cin>>ch;
-    }while(ch!='n');
+    }while(ch=='y'||ch=='Y');
     return 0;
 }
 bool prime_check::check()
