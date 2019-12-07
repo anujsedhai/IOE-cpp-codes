@@ -26,18 +26,25 @@ int main()
 {
     prime_check pc;
     int x;
-    cout<<"Enter number to check whether it is prime or not:\t";
-    cin>>x;
-    pc.add_data(x);
-    if(pc.check()==true)
+    char ch;
+    do
     {
-        cout<<endl<<"It is prime";
 
-    }
-    else
-    {
-        cout<<endl<<"It is not prime";
-    }
+        cout<<endl<<"Enter number to check whether it is prime or not:\t";
+        cin>>x;
+        pc.add_data(x);
+        if(pc.check()==true)
+        {
+            cout<<endl<<"It is prime"<<endl;
+
+        }
+        else
+        {
+            cout<<"It is not prime"<<endl;
+        }
+        cout<<"Do you want to do another checking?(y/n)";
+        cin>>ch;
+    }while(ch!='n');
     return 0;
 }
 bool prime_check::check()
