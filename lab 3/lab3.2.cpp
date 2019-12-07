@@ -22,26 +22,6 @@ class prime_check
         }
         bool check();
 };
-bool prime_check::check()
-{
-    int flag=0;
-    for (int i=2;i<num;i++)
-    {
-        if((num%i)==0)
-        {
-            flag=flag+1;                //if the given number is divisible by any number between 2 and (given number - 1) then it is not prime
-            break;
-        }
-    }
-    if(flag==0)
-    {
-        return trueo;
-    }
-    else
-    {
-        return false;
-    }
-}
 int main()
 {
     prime_check pc;
@@ -59,4 +39,24 @@ int main()
         cout<<endl<<"It is not prime";
     }
     return 0;
+}
+bool prime_check::check()
+{
+    int flag=0;
+    for (int i=2;i<num;i++)
+    {
+        if((num%i)==0)
+        {
+            flag=flag+1;                //if the given number is divisible by any number between 2 and (given number - 1) then it is not prime
+            break;
+        }
+    }
+    if(flag==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
