@@ -13,14 +13,17 @@ void disp(miti);
 int main()
 {
     miti m;
-    m.dd=10;
-    m.mm=15;
-    m.yy=2019;
+    cout<<"Enter day:\t";
+    cin>>m.dd;
+    cout<<"\nEnter month:\t";
+    cin>>m.mm;
+    cout<<"\nEnter year:\t";
+    cin>>m.yy;
     disp(m);
 }
 void disp(miti d)
 {
-    cout<<d.mm<<'/'<<d.dd<<'/'<<d.yy<<endl;
+    cout<<endl<<d.mm<<'/'<<d.dd<<'/'<<d.yy<<endl;
 }
 
 

@@ -8,7 +8,6 @@ function of the "Square" namespace.*/
 
 
 #include<iostream>
-#include<math.h>
 using namespace std;
 namespace cube
 {
@@ -18,7 +17,7 @@ namespace cube
         return a*a*a;
     }
 
-}
+};
 namespace square
 {
     int num;
@@ -27,7 +26,7 @@ namespace square
         return b*b;
     }
 
-}
+};
 int main()
 {
     square::num=5;

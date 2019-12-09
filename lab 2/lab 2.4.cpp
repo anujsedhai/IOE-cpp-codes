@@ -7,8 +7,8 @@ int &ma(int &,int &);
 int main()
 {
     int t1,t2;
-    t1=95;
-    t2=94;
+    cout<<"Enter two numbers:\t";
+    cin>>t1>>t2;
     int &a=t1;
     int &b=t2;
     cout<<"Previous value of t1 and t2 are:\t"<<t1<<'\t'<<t2<<endl;
