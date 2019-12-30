@@ -83,10 +83,10 @@ void circle::calculations()
 }
 void rectangle::calculations()
 {
-    cout<<"\n\nFor rectangle:"<<endl<<"Length=:\t"<<length<<endl;
-    cout<<"Breadth=:\t"<<breadth<<endl;
-    cout<<"Perimeter=:\t"<<2*(length+breadth)<<endl;
-    cout<<"Area=:\t"<<(length*breadth)<<endl;
+    cout<<"\n\nFor rectangle:"<<endl<<"Length:\t"<<length<<endl;
+    cout<<"Breadth:\t"<<breadth<<endl;
+    cout<<"Perimeter:\t"<<2*(length+breadth)<<endl;
+    cout<<"Area:\t"<<(length*breadth)<<endl;
 
 }
 void triangle::calculations()

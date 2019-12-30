@@ -22,7 +22,7 @@ int main()
 {
     int x,y;
     float z;
-    class carpark c1;
+    carpark c1;
     cout<<"Enter your car id:\t";
     cin>>x;
     cout<<endl<<"Enter the charge per hour(i.e rate):\t";
