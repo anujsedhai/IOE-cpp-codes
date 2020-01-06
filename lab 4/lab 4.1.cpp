@@ -5,7 +5,7 @@
 @Author: Anuj Sedhai
 @BCT 075 batch, Thapathali campus
 @written on 18/12/2019
-/*
+*/
 
 
 #include<iostream>
