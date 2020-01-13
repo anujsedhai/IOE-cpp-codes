@@ -27,7 +27,7 @@ public:
 };
 int main()
 {
-    const cls1 o1(3,4);
+    cls1 o1(3,4);
     o1.add();
     o1.show();
 }

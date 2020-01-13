@@ -12,22 +12,24 @@ using namespace std;
 class depart
 {
     string depart_id,depart_name;
-    int c=0;
+    static int c;
+    int n;
     public:
     depart(string id,string name)
     {
         depart_id=id;
         depart_name=name;
-        c++;
-        cout<<"Object"<<c<<" created"<<endl;
+        n=++c;
+        cout<<"Object"<<n<<" created"<<endl;
 
     }
     ~depart()
     {
-        cout<<"Object"<<c<<" goes out of scope"<<endl;
-        c--;
+        cout<<"Object"<<n<<" goes out of scope"<<endl;
+
     }
 };
+int depart::c=0;
 int main()
 {
     depart d1("A35","Computer"),d2("A36","Mechanical"),d3("A37","Architecture");

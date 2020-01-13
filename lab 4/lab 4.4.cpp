@@ -17,7 +17,7 @@ class Vehicle
     float hour, rate, charge;
 public:
     Vehicle(int n, float h, float r): num_vehicle(n), hour(h), rate(r) {}
-    vehicle(vehicle& v1)
+    Vehicle(Vehicle& v1)
     {
         hour = v1.hour;
         num_vehicle = v1.num_vehicle;
@@ -46,8 +46,8 @@ int main()
     cin >> h;
     cout << "Enter rate: ";
     cin >> r;
-    vehicle v1(n, h, r);
-    vehicle v2(v1);
+    Vehicle v1(n, h, r);
+    Vehicle v2(v1);
     v1.display();
     v2.display();
 }

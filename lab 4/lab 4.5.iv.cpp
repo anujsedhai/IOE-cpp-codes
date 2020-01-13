@@ -22,7 +22,7 @@ public:
     {
         sum=a+b;
     }
-    void show()
+    void show() const
     {
         cout<<"Sum = "<<sum<<endl;
     }
