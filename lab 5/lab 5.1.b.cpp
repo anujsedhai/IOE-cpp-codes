@@ -29,7 +29,7 @@ public:
         x=ix;
         y=iy;
     }
-        void add(class1 c1, class2 c2)
+    void add(class1 c1, class2 c2)
     {
         cout<<"Sum of given coordinates:"<<endl<<"x="<<c1.x+c2.x<<endl<<"y="<<c1.y+c2.y<<endl;
     }

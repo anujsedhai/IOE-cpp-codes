@@ -25,12 +25,7 @@ public:
             cout<<"True"<<endl;
         }
         else
-        {if(dd>31)
-            {
-                dd=1;
-                mm++;
-                break;
-            }
+        {
             cout<<"False"<<endl;
         }
     }
