@@ -6,6 +6,7 @@
 @written on 03/02/2020
 */
 #include<iostream>
+#include<conio.h>
 using namespace std;
 class Person
 {
@@ -70,6 +71,7 @@ int main()
     mobj.employee_getdata();
     mobj.student_getdata();
     mobj.manager_getdata();
+    system("cls");
     mobj.person_disp();
     mobj.employee_disp();
     mobj.student_disp();
