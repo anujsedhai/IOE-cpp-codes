@@ -1,6 +1,9 @@
 /*Question: Create a polymorphic class Vehicle and create other derived
             classes Bus, Car and Bike from Vehicle. With this program illustrate RTTI by the use
             of dynamic_cast and typeid operators.
+@Author: Anuj Sedhai
+@BCT 075 batch, Thapathali campus
+@written on 03/02/2020
 */
 #include <iostream>
 #include <cstring>
